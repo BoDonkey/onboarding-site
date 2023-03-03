@@ -1,0 +1,35 @@
+.articles {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    grid-template-areas: 'Header .' 'articles images' '. images' '. images' '. images' '. images';
+    column-gap: 33px;
+    row-gap: 0px;
+}
+
+.article {
+    align-self: center;
+    grid-area: 2/1/3/2;
+}
+
+.hide-last {
+    display: none;
+}
+
+.custom-underline {
+    text-decoration-line: underline;
+    text-underline-offset: 40px;
+    text-decoration-color: #9d99d4;
+}
+
+.row-height {
+    min-height: 25vh;
+    border-bottom: 3px solid #987e7e;
+}
+
+.deal-height {
+    height: 10vh;
+}
+
+.tight {
+}
